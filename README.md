@@ -1,6 +1,6 @@
 # Big Fat Awesome House Party Server
 
-Big Fat Awesome House Party (BFAHP) was a Shockwave game developed by Powerful Robot Games and published by Cartoon Network on May 15th, 2006. It was hosted on awesomehouseparty.com until July 13th, 2009, shortly after [the show it was based on](https://en.wikipedia.org/wiki/Foster%27s_Home_for_Imaginary_Friends) ended.
+Big Fat Awesome House Party (BFAHP) was a Shockwave game developed by Powerful Robot Games and published by Cartoon Network on AwesomeHouseParty.com. The game was released on May 15th, 2006, and discontinued by June 15th, 2009, not long after [the show it was based on](https://en.wikipedia.org/wiki/Foster%27s_Home_for_Imaginary_Friends) had ended. 
 
 This repository contains a collection of PHP scripts that emulate the various endpoints required to play the game using a local web server. Users may register any number of accounts, with the game's progress being saved locally to a SQLite database. [The Python server created by sebastian404](https://github.com/sebastian404/bfahps) was used as a reference throughout development, with the following changes being made to its behavior:
 
