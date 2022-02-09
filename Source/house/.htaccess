@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^home.jsp$ Home.php [L]
+RewriteRule ^Registration$ Registration.php [L]
+RewriteRule ^Login$ Login.php [L]
+RewriteRule ^Game$ Game.php [L]
+RewriteRule ^Service$ Service.php [L]

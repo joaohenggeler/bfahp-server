@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^toonahp/(.*)$ http://i.awesomehouseparty.com/toonahp/$1 [L,R=301]
+RewriteRule ^toon/(.*)$ http://i.cartoonnetwork.com/toon/$1 [L,R=301]
