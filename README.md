@@ -12,11 +12,13 @@ This repository contains a collection of PHP scripts that emulate the various en
 
 * Remembers the last authenticated user when registering or logging in. This was meant to allow players to play the game using a Shockwave projector if they were always going to use the same account. In practice, players must always play using a browser since the game client doesn't properly encode URLs with spaces in them when loading assets, leading to a malformed HTTP request.
 
-The server endpoints have only been tested using [version 1.14.3 (2007-06-18)](https://github.com/sebastian404/bfahps/blob/master/docs/versions.md) of the game's client. **This repository does not include any of the game's assets.**
+The server endpoints have only been tested using [version 1.14.3 (2007-06-18)](https://github.com/sebastian404/bfahps/blob/master/docs/versions.md) of the game's client. [Here is a video of this version being played locally with this server implementation.](https://youtu.be/ec6HKfvs35U)
+
+**This repository does not include any of the game's assets.**
 
 ## Structure
 
-This section will list every relevant file inside the [source directory](Source). These should be placed in `awesomehouseparty.com` for the game to run properly. The domains `i.cartoonnetwork.com` and `i.awesomehouseparty.com` should, respectively, include static page assets (images, CSS, JavaScript) and game assets (Flash movies, Flash videos, XML, Shockwave movies, Shockwave external cast members).
+This section will list every relevant file inside the [source directory](Source). These should be placed in `awesomehouseparty.com` for the game to run properly. The domains `i.cartoonnetwork.com` and `i.awesomehouseparty.com` should, respectively, include static page assets (images, CSS, JavaScript) and game assets (Flash movies, Flash videos, XML, Shockwave movies, Shockwave external casts).
 
 Two `.htaccess` files are provided so that Apache servers can perform the following redirections: 1) `awesomehouseparty.com/toonahp/*` to `i.awesomehouseparty.com/toonahp/*`; 2) `awesomehouseparty.com/toon/*` to `i.cartoonnetwork.com/toon/*`; 3) `house/<Endpoint>` to `house/<Endpoint>.php` (with `home.jsp` mapping to `Home.php`). You should be able to easily adapt these to other servers. The `crossdomain.xml` file allows the Flash authentication movie to request data from different domains.
 
