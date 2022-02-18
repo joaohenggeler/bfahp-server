@@ -18,7 +18,7 @@ The server endpoints have only been tested using [version 1.14.3 (2007-06-18)](h
 
 ## Structure
 
-This section will document every relevant file inside [the source directory](Source). These should be placed in `awesomehouseparty.com` for the game to run properly. The domains `i.cartoonnetwork.com` and `i.awesomehouseparty.com` should, respectively, include static page assets (HTML, JavaScript, images) and game assets (Flash movies, Flash videos, XML, Shockwave movies, Shockwave external casts).
+This section documents every relevant file inside [the source directory](Source). These should be placed in `awesomehouseparty.com` for the game to run properly. The domains `i.cartoonnetwork.com` and `i.awesomehouseparty.com` should, respectively, include static page assets (HTML, JavaScript, images) and game assets (Flash movies, Flash videos, XML, Shockwave movies, Shockwave external casts).
 
 Two `.htaccess` files are provided so that Apache servers can perform the following redirections: 1) `awesomehouseparty.com/toonahp/*` to `i.awesomehouseparty.com/toonahp/*`; 2) `awesomehouseparty.com/toon/*` to `i.cartoonnetwork.com/toon/*`; 3) `house/<Endpoint>` to `house/<Endpoint>.php` (with `home.jsp` mapping to `Home.php`). You should be able to easily adapt these to other servers. The `crossdomain.xml` file allows the Flash authentication movie to request data from different domains.
 
